@@ -1,0 +1,180 @@
+body {
+    background: #f8f8f8;
+}
+
+.menu1 {
+    font-size: 20px;
+    font-style: italic;
+    color: #4682B4;
+    text-decoration: none;
+}
+
+.menu1:hover {
+    color: blueviolet;
+}
+
+.characteristics {
+    color: #000000;
+    background: #eaeaea;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.cat-list {
+    text-decoration: none;
+    font-size: 16px;
+    color: #4682B4;
+    font-weight: 800;
+}
+
+#marker {
+    list-style-type: none;
+    text-align: right;
+}
+#marker li {
+    display: inline;
+}
+
+#description {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+#full-description {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+#characteristics-list {
+    line-height: 24px;
+    color: #0e12b4;
+    list-style-image: url('image/marker.jpg');
+    font-weight: 500;
+    font-size: 17px;
+}
+
+#e-mail, #phone, #username, #sub, #mess {
+    width: 300px;
+    height: 24px;
+    color: black;
+    font-size: 16px;
+    font-style: italic;
+}
+
+input[name='email']:focus {
+    color: #4682B4;
+    background: blanchedalmond;
+}
+
+#field form input {
+    text-transform: capitalize;
+}
+
+#but {
+    background: #4682B4;
+    color: white;
+    border-radius: 3px;
+}
+
+#picture {
+    border: 2px solid #4682B4;
+}
+
+#field {
+    border-color: #4682B4;
+}
+
+.footer {
+    background: lightsteelblue;
+    text-align: center;
+    font-weight: 800;
+    height: 100px;
+}
+
+table, td, th {
+    border: 2px solid #707070;
+    border-collapse: collapse;
+    color: #4682B4;
+    text-align: left;
+}
+.header-th {
+    height: 30px;
+}
+#description:first-letter {
+    font-size: 30px;
+    font-weight: 800;
+    color: #4682B4;
+}
+
+#full-description:first-letter {
+    font-size: 30px;
+    font-weight: 800;
+    color: #4682B4;
+}
+
+#logo {
+    width: 70px;
+    height: 70px;
+    margin-left: 50px;
+}
+
+#picture1 {
+    width: 466px;
+    height: 300px;
+    border: 2px solid #4682B4;
+}
+
+#picture1:hover {
+    width: 466px;
+    height: 300px;
+    border: 2px solid #f8f8f8;
+}
+
+#picture2 {
+    width: 250px;
+    height: 250px;
+    border: 2px solid #4682B4;
+}
+
+#picture2:hover {
+    width: 250px;
+    height: 250px;
+    border: 2px solid #f8f8f8;
+}
+
+#picture3 {
+    width: 280px;
+    height: 196px;
+    border: 2px solid #4682B4;
+}
+
+#picture3:hover {
+    border: 2px solid #f8f8f8;
+    width: 280px;
+    height: 196px;
+}
+
+#icon1 {
+    height: 150px;
+    width: 233px;
+}
+#icon2 {
+    height: 150px;
+    width: 210px;
+}
+#icon3 {
+    height: 150px;
+    width: 280px;
+}
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+.header {
+    height: 170px;
+}
