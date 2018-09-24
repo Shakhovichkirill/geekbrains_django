@@ -1,24 +1,12 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en" xmlns="http://www.w3.org/1999/html">
-<head>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" href="/static/img/purse.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/static/css/style.css">
-    <title>Интернет-магазин</title>
-</head>
+{% include 'includes/inc_header.html' %}
 <body>
-<div class="header">
-    <img id="logo" src="/static/img/log.png">
-    Интернет-магазин РОБОТОТЕХНИКА
-    <ul id="marker">
-        <li><a class="menu1" href="/">Главная</a></li>
-        <li><a class="menu1" href="/catalog/">Каталог</a></li>
-        <li><a class="menu1" href="/contacts/">Контакты</a></li>
-    </ul>
-</div>
+{% include 'includes/inc_menu.html' %}
 <hr>
 <h1>Arduino UNO R3</h1>
-<a href="/static/img/arduino.jpeg" target="_blank"><img id="picture2" src="/static/img/arduino.jpeg"/></a>
+<a href="{% static 'img/arduino.jpeg' %}" target="_blank"><img id="picture2" src="{% static 'img/arduino.jpeg' %}"/></a>
 <h2 class="characteristics">Описание:</h2>
 <p id="description"> Arduino — открытая платформа, которая позволяет легко подключать различные устройства, быстро
     достигая результата.
@@ -61,11 +49,9 @@
     Для работы необходимо подключить платформу к компьютеру посредством кабеля USB
     или подать питание при помощи адаптера AC/DC, или аккумуляторной батареей.
 </p>
-<a href="/catalog/">
+<a href="{% url 'catalog' %}">
     <button id="but">Назад</button>
 </a>
-<div class="footer">
-    <p>&copy;&nbsp;"Все права защищены"</p>
-</div>
+{% include 'includes/inc_footer.html' %}
 </body>
 </html>

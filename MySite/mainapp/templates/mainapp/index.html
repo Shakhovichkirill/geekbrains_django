@@ -1,22 +1,10 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en" xmlns="http://www.w3.org/1999/html">
-<head>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" href="/static/img/purse.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/static/css/style.css">
-    <title>Интернет-магазин</title>
-</head>
+{% include 'includes/inc_header.html' %}
 <body>
 <div class="container">
-<div class="header">
-        <img id="logo" src="/static/img/log.png">
-        Интернет-магазин РОБОТОТЕХНИКА
-        <ul id="marker">
-            <li><a class="menu1" href="/">Главная</a></li>
-            <li><a class="menu1" href="/catalog/">Каталог</a></li>
-            <li><a class="menu1" href="/contacts/">Контакты</a></li>
-        </ul>
-    </div>
+{% include 'includes/inc_menu.html' %}
 <hr>
 <h1>Главная</h1>
 <p>Это уникальный магазин робототехники в Санкт-Петербурге. Мы собрали для вас в одном месте все новинки
@@ -32,7 +20,7 @@
     Широкий ассортимент нашего магазина робототехники предлагает вам саморазвитие вместо рутинных дел. Освободите время
     для себя и своих близких, сохраните его для более важных дел!</p>
 <hr>
-<div class="footer">&copy;&nbsp;"Все права защищены"</div>
+{% include 'includes/inc_footer.html' %}
 </div>
 </body>
 </html>
