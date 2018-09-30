@@ -1,0 +1,5 @@
+links_menu = [
+	{'href': 'main', 'name': 'Главная'},
+	{'href': 'catalog', 'name': 'Каталог'},
+	{'href': 'contacts', 'name': 'Контакты'},
+]

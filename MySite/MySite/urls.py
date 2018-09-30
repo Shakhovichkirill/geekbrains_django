@@ -16,6 +16,9 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 import mainapp.views as mainapp
+from django.conf import settings
+from django.conf.urls.static import static
+from django.conf.urls import include
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -25,5 +28,7 @@ urlpatterns = [
     url(r'^product1/', mainapp.product1, name='product1'),
     url(r'^product2/', mainapp.product2, name='product2'),
     url(r'^product3/', mainapp.product3, name='product3'),
-
+    url(r'^products/', include('mainapp.urls', namespace='products')),	
 ]
+
+
